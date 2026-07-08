@@ -32,8 +32,18 @@ class $AssetsIconsGen {
   /// File path: assets/icons/quran.svg
   SvgGenImage get quran => const SvgGenImage('assets/icons/quran.svg');
 
+  /// File path: assets/icons/verseicon.svg
+  SvgGenImage get verseicon => const SvgGenImage('assets/icons/verseicon.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [icHadeth, icRadio, icSebha, icTime, quran];
+  List<SvgGenImage> get values => [
+    icHadeth,
+    icRadio,
+    icSebha,
+    icTime,
+    quran,
+    verseicon,
+  ];
 }
 
 class $AssetsImagesGen {
@@ -93,6 +103,14 @@ class $AssetsImagesGen {
   AssetGenImage get icSplash =>
       const AssetGenImage('assets/images/ic_splash.png');
 
+  /// File path: assets/images/img_most_recent.png
+  AssetGenImage get imgMostRecent =>
+      const AssetGenImage('assets/images/img_most_recent.png');
+
+  /// File path: assets/images/img_sur_number_frame.png
+  AssetGenImage get imgSurNumberFrame =>
+      const AssetGenImage('assets/images/img_sur_number_frame.png');
+
   /// File path: assets/images/quran.png
   AssetGenImage get quran => const AssetGenImage('assets/images/quran.png');
 
@@ -106,27 +124,28 @@ class $AssetsImagesGen {
   AssetGenImage get time => const AssetGenImage('assets/images/time.png');
 
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [
-        background,
-        frame31,
-        frame32,
-        frame33,
-        frame34,
-        frame3,
-        group30,
-        group31,
-        group32,
-        group33,
-        group34,
-        sebhaBody1,
-        haddith,
-        icSplash,
-        quran,
-        radio,
-        tasbeeh,
-        time,
-      ];
+  List<AssetGenImage> get values => [
+    background,
+    frame31,
+    frame32,
+    frame33,
+    frame34,
+    frame3,
+    group30,
+    group31,
+    group32,
+    group33,
+    group34,
+    sebhaBody1,
+    haddith,
+    icSplash,
+    imgMostRecent,
+    imgSurNumberFrame,
+    quran,
+    radio,
+    tasbeeh,
+    time,
+  ];
 }
 
 class Assets {
@@ -137,7 +156,8 @@ class Assets {
 }
 
 class AssetGenImage {
-  const AssetGenImage(this._assetName, {
+  const AssetGenImage(
+    this._assetName, {
     this.size,
     this.flavors = const {},
     this.animation,
@@ -225,10 +245,10 @@ class AssetGenImageAnimation {
 
 class SvgGenImage {
   const SvgGenImage(this._assetName, {this.size, this.flavors = const {}})
-      : _isVecFormat = false;
+    : _isVecFormat = false;
 
   const SvgGenImage.vec(this._assetName, {this.size, this.flavors = const {}})
-      : _isVecFormat = true;
+    : _isVecFormat = true;
 
   final String _assetName;
   final Size? size;
@@ -285,7 +305,7 @@ class SvgGenImage {
       semanticsLabel: semanticsLabel,
       excludeFromSemantics: excludeFromSemantics,
       colorFilter:
-      colorFilter ??
+          colorFilter ??
           (color == null ? null : ColorFilter.mode(color, colorBlendMode)),
       clipBehavior: clipBehavior,
       cacheColorFilter: cacheColorFilter,
