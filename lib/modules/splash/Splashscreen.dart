@@ -1,4 +1,3 @@
-//
 // import 'package:flutter/material.dart';
 // import 'package:islami/core/AppRoutes/AppRouteName.dart';
 // import 'package:islami/modules/layout/layoutView.dart';
@@ -22,7 +21,6 @@
 //     checkonboarding();
 //   }
 //   Future<void>checkonboarding()async{
-//
 //
 //     final prefs = await
 //     SharedPreferences.getInstance() ;

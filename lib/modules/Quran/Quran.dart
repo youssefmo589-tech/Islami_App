@@ -599,7 +599,8 @@ class _QuranState extends State<Quran> {
                             fontFamily: "Janna",
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            color: AppColors.white),),
+                            color: AppColors.white),
+                        ),
                       )),
                   SizedBox(height: 10),
 
