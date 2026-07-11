@@ -56,6 +56,12 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/8ecd90f9c0f697364f4eaf0fa31d777f4485ee6b.png
+  AssetGenImage get a8ecd90f9c0f697364f4eaf0fa31d777f4485ee6b =>
+      const AssetGenImage(
+        'assets/images/8ecd90f9c0f697364f4eaf0fa31d777f4485ee6b.png',
+      );
+
   /// File path: assets/images/Background.png
   AssetGenImage get background =>
       const AssetGenImage('assets/images/Background.png');
@@ -144,6 +150,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    a8ecd90f9c0f697364f4eaf0fa31d777f4485ee6b,
     background,
     frame31,
     frame32,
