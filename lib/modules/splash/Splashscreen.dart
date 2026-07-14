@@ -1,4 +1,3 @@
-//
 // import 'package:flutter/material.dart';
 // import 'package:islami/core/AppRoutes/AppRouteName.dart';
 // import 'package:islami/modules/layout/layoutView.dart';
@@ -22,7 +21,6 @@
 //     checkonboarding();
 //   }
 //   Future<void>checkonboarding()async{
-//
 //
 //     final prefs = await
 //     SharedPreferences.getInstance() ;
@@ -61,6 +59,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:islami/modules/onBoarding/checlkOnbording.dart';
 
 import '../../core/AppRoutes/AppRouteName.dart';
 import '../../core/gen/assets.gen.dart';
@@ -77,14 +76,28 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   void initState() {
     super.initState();
+    check();
+  }
 
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushNamedAndRemoveUntil(
-        context,
-        AppRouteName.OnBoarding,
-        (route) => false,
-      );
-    });
+  void check() async {
+    bool seen = await CheckOnboarding.getinst();
+    if (seen) {
+      Future.delayed(Duration(seconds: 3), () {
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          AppRouteName.layout,
+          (route) => false,
+        );
+      });
+    } else {
+      Future.delayed(Duration(seconds: 3), () {
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          AppRouteName.OnBoarding,
+          (route) => false,
+        );
+      });
+    }
   }
 
   void dispose() {
