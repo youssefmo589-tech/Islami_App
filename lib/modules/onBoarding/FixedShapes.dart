@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/core/AppRoutes/AppRouteName.dart';
+import 'package:islami/modules/onBoarding/checlkOnbording.dart';
 
 import '../../core/gen/assets.gen.dart';
 import '../../core/theme/AppColors.dart';
@@ -70,6 +71,8 @@ class FixedShapes extends StatelessWidget {
                       TextButton(
                         onPressed: () {
                           if (index == 4) {
+                            CheckOnboarding.setinst();
+
                             Navigator.pushNamedAndRemoveUntil(
                               context,
                               AppRouteName.layout,

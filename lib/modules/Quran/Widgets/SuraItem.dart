@@ -1,15 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../core/AppRoutes/AppRouteName.dart';
 import '../../../core/gen/assets.gen.dart';
 import '../../../core/theme/AppColors.dart';
 import '../../../model/sura_datamodel.dart';
 
 class SuraItem extends StatefulWidget {
   final SuraDatamodel Sura;
+  final Function() ontap;
 
-
-  const SuraItem({super.key, required this.Sura });
+  const SuraItem({super.key, required this.Sura, required this.ontap});
 
   State<SuraItem> createState() {
     return _SuraItemState();
@@ -21,9 +20,7 @@ class _SuraItemState extends State<SuraItem> {
     return GestureDetector(
       behavior: HitTestBehavior.translucent,
       onTap: () {
-        // Navigator.pushNamed(context , AppRouteName.QuranDetailsView , arguments: widget.Sura);
-        Navigator.pushNamed(
-            context, AppRouteName.QuranDetailsView, arguments: widget.Sura);
+        widget.ontap();
       },
       child: Row(
         children: [
