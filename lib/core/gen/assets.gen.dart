@@ -17,12 +17,29 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsFilesGen {
   const $AssetsFilesGen();
 
+  /// Directory path: assets/files/Hddith
+  $AssetsFilesHddithGen get hddith => const $AssetsFilesHddithGen();
+
   /// Directory path: assets/files/Quran
   $AssetsFilesQuranGen get quran => const $AssetsFilesQuranGen();
 }
 
 class $AssetsIconsGen {
   const $AssetsIconsGen();
+
+  /// File path: assets/icons/Pause.svg
+  SvgGenImage get pause => const SvgGenImage('assets/icons/Pause.svg');
+
+  /// File path: assets/icons/Polygon 2.svg
+  SvgGenImage get polygon2 => const SvgGenImage('assets/icons/Polygon 2.svg');
+
+  /// File path: assets/icons/Volume Cross.svg
+  SvgGenImage get volumeCross =>
+      const SvgGenImage('assets/icons/Volume Cross.svg');
+
+  /// File path: assets/icons/Volume High.svg
+  SvgGenImage get volumeHigh =>
+      const SvgGenImage('assets/icons/Volume High.svg');
 
   /// File path: assets/icons/ic_hadeth.svg
   SvgGenImage get icHadeth => const SvgGenImage('assets/icons/ic_hadeth.svg');
@@ -44,6 +61,10 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [
+    pause,
+    polygon2,
+    volumeCross,
+    volumeHigh,
     icHadeth,
     icRadio,
     icSebha,
@@ -142,6 +163,10 @@ class $AssetsImagesGen {
   AssetGenImage get rightcorner =>
       const AssetGenImage('assets/images/rightcorner.png');
 
+  /// File path: assets/images/soundWave 1.png
+  AssetGenImage get soundWave1 =>
+      const AssetGenImage('assets/images/soundWave 1.png');
+
   /// File path: assets/images/tasbeeh.png
   AssetGenImage get tasbeeh => const AssetGenImage('assets/images/tasbeeh.png');
 
@@ -172,8 +197,217 @@ class $AssetsImagesGen {
     quran,
     radio,
     rightcorner,
+    soundWave1,
     tasbeeh,
     time,
+  ];
+}
+
+class $AssetsFilesHddithGen {
+  const $AssetsFilesHddithGen();
+
+  /// File path: assets/files/Hddith/h1.txt
+  String get h1 => 'assets/files/Hddith/h1.txt';
+
+  /// File path: assets/files/Hddith/h10.txt
+  String get h10 => 'assets/files/Hddith/h10.txt';
+
+  /// File path: assets/files/Hddith/h11.txt
+  String get h11 => 'assets/files/Hddith/h11.txt';
+
+  /// File path: assets/files/Hddith/h12.txt
+  String get h12 => 'assets/files/Hddith/h12.txt';
+
+  /// File path: assets/files/Hddith/h13.txt
+  String get h13 => 'assets/files/Hddith/h13.txt';
+
+  /// File path: assets/files/Hddith/h14.txt
+  String get h14 => 'assets/files/Hddith/h14.txt';
+
+  /// File path: assets/files/Hddith/h15.txt
+  String get h15 => 'assets/files/Hddith/h15.txt';
+
+  /// File path: assets/files/Hddith/h16.txt
+  String get h16 => 'assets/files/Hddith/h16.txt';
+
+  /// File path: assets/files/Hddith/h17.txt
+  String get h17 => 'assets/files/Hddith/h17.txt';
+
+  /// File path: assets/files/Hddith/h18.txt
+  String get h18 => 'assets/files/Hddith/h18.txt';
+
+  /// File path: assets/files/Hddith/h19.txt
+  String get h19 => 'assets/files/Hddith/h19.txt';
+
+  /// File path: assets/files/Hddith/h2.txt
+  String get h2 => 'assets/files/Hddith/h2.txt';
+
+  /// File path: assets/files/Hddith/h20.txt
+  String get h20 => 'assets/files/Hddith/h20.txt';
+
+  /// File path: assets/files/Hddith/h21.txt
+  String get h21 => 'assets/files/Hddith/h21.txt';
+
+  /// File path: assets/files/Hddith/h22.txt
+  String get h22 => 'assets/files/Hddith/h22.txt';
+
+  /// File path: assets/files/Hddith/h23.txt
+  String get h23 => 'assets/files/Hddith/h23.txt';
+
+  /// File path: assets/files/Hddith/h24.txt
+  String get h24 => 'assets/files/Hddith/h24.txt';
+
+  /// File path: assets/files/Hddith/h25.txt
+  String get h25 => 'assets/files/Hddith/h25.txt';
+
+  /// File path: assets/files/Hddith/h26.txt
+  String get h26 => 'assets/files/Hddith/h26.txt';
+
+  /// File path: assets/files/Hddith/h27.txt
+  String get h27 => 'assets/files/Hddith/h27.txt';
+
+  /// File path: assets/files/Hddith/h28.txt
+  String get h28 => 'assets/files/Hddith/h28.txt';
+
+  /// File path: assets/files/Hddith/h29.txt
+  String get h29 => 'assets/files/Hddith/h29.txt';
+
+  /// File path: assets/files/Hddith/h3.txt
+  String get h3 => 'assets/files/Hddith/h3.txt';
+
+  /// File path: assets/files/Hddith/h30.txt
+  String get h30 => 'assets/files/Hddith/h30.txt';
+
+  /// File path: assets/files/Hddith/h31.txt
+  String get h31 => 'assets/files/Hddith/h31.txt';
+
+  /// File path: assets/files/Hddith/h32.txt
+  String get h32 => 'assets/files/Hddith/h32.txt';
+
+  /// File path: assets/files/Hddith/h33.txt
+  String get h33 => 'assets/files/Hddith/h33.txt';
+
+  /// File path: assets/files/Hddith/h34.txt
+  String get h34 => 'assets/files/Hddith/h34.txt';
+
+  /// File path: assets/files/Hddith/h35.txt
+  String get h35 => 'assets/files/Hddith/h35.txt';
+
+  /// File path: assets/files/Hddith/h36.txt
+  String get h36 => 'assets/files/Hddith/h36.txt';
+
+  /// File path: assets/files/Hddith/h37.txt
+  String get h37 => 'assets/files/Hddith/h37.txt';
+
+  /// File path: assets/files/Hddith/h38.txt
+  String get h38 => 'assets/files/Hddith/h38.txt';
+
+  /// File path: assets/files/Hddith/h39.txt
+  String get h39 => 'assets/files/Hddith/h39.txt';
+
+  /// File path: assets/files/Hddith/h4.txt
+  String get h4 => 'assets/files/Hddith/h4.txt';
+
+  /// File path: assets/files/Hddith/h40.txt
+  String get h40 => 'assets/files/Hddith/h40.txt';
+
+  /// File path: assets/files/Hddith/h41.txt
+  String get h41 => 'assets/files/Hddith/h41.txt';
+
+  /// File path: assets/files/Hddith/h42.txt
+  String get h42 => 'assets/files/Hddith/h42.txt';
+
+  /// File path: assets/files/Hddith/h43.txt
+  String get h43 => 'assets/files/Hddith/h43.txt';
+
+  /// File path: assets/files/Hddith/h44.txt
+  String get h44 => 'assets/files/Hddith/h44.txt';
+
+  /// File path: assets/files/Hddith/h45.txt
+  String get h45 => 'assets/files/Hddith/h45.txt';
+
+  /// File path: assets/files/Hddith/h46.txt
+  String get h46 => 'assets/files/Hddith/h46.txt';
+
+  /// File path: assets/files/Hddith/h47.txt
+  String get h47 => 'assets/files/Hddith/h47.txt';
+
+  /// File path: assets/files/Hddith/h48.txt
+  String get h48 => 'assets/files/Hddith/h48.txt';
+
+  /// File path: assets/files/Hddith/h49.txt
+  String get h49 => 'assets/files/Hddith/h49.txt';
+
+  /// File path: assets/files/Hddith/h5.txt
+  String get h5 => 'assets/files/Hddith/h5.txt';
+
+  /// File path: assets/files/Hddith/h50.txt
+  String get h50 => 'assets/files/Hddith/h50.txt';
+
+  /// File path: assets/files/Hddith/h6.txt
+  String get h6 => 'assets/files/Hddith/h6.txt';
+
+  /// File path: assets/files/Hddith/h7.txt
+  String get h7 => 'assets/files/Hddith/h7.txt';
+
+  /// File path: assets/files/Hddith/h8.txt
+  String get h8 => 'assets/files/Hddith/h8.txt';
+
+  /// File path: assets/files/Hddith/h9.txt
+  String get h9 => 'assets/files/Hddith/h9.txt';
+
+  /// List of all assets
+  List<String> get values => [
+    h1,
+    h10,
+    h11,
+    h12,
+    h13,
+    h14,
+    h15,
+    h16,
+    h17,
+    h18,
+    h19,
+    h2,
+    h20,
+    h21,
+    h22,
+    h23,
+    h24,
+    h25,
+    h26,
+    h27,
+    h28,
+    h29,
+    h3,
+    h30,
+    h31,
+    h32,
+    h33,
+    h34,
+    h35,
+    h36,
+    h37,
+    h38,
+    h39,
+    h4,
+    h40,
+    h41,
+    h42,
+    h43,
+    h44,
+    h45,
+    h46,
+    h47,
+    h48,
+    h49,
+    h5,
+    h50,
+    h6,
+    h7,
+    h8,
+    h9,
   ];
 }
 
