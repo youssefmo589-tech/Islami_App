@@ -15,16 +15,27 @@ class Radioo extends StatefulWidget {
 class _RadiooState extends State<Radioo> {
   bool _isradioselected = false;
 
-  List<RadioCard>radiolist = [
-    RadioCard(txt: "Radio Ibrahim Al-Akdar"),
-    RadioCard(txt: "Radio Al-Qaria Yassen"),
+  List<Radio_RecitersCard>radiolist = [
+    Radio_RecitersCard(txt: "Radio Ibrahim Al-Akdar"),
+    Radio_RecitersCard(txt: "Radio Al-Qaria Yassen"),
 
-    RadioCard(txt: "Radio Ahmed Al-trabulsi"),
+    Radio_RecitersCard(txt: "Radio Ahmed Al-trabulsi"),
 
-    RadioCard(txt: "Radio Addokali Mohammad Alalim"),
+    Radio_RecitersCard(txt: "Radio Addokali Mohammad Alalim"),
 
 
   ];
+  List<Radio_RecitersCard>reciterslist = [
+    Radio_RecitersCard(txt: "Ibrahim Al-Akdar"),
+    Radio_RecitersCard(txt: "Akram Alalaqmi"),
+
+    Radio_RecitersCard(txt: "Majed Al-Enezi"),
+
+    Radio_RecitersCard(txt: "Malik shaibat Alhamed"),
+
+
+  ];
+
 
   Widget build(BuildContext context) {
     return SafeArea(
@@ -142,13 +153,13 @@ class _RadiooState extends State<Radioo> {
                     ),
                     SizedBox(height: 10,),
 
-                    ListView.separated(
+                    _isradioselected ? ListView.separated(
                       padding: EdgeInsets.only(bottom: 10),
                       shrinkWrap: true,
                       physics: NeverScrollableScrollPhysics(),
 
                       itemBuilder: (context, index) {
-                        return RadioCard(txt: radiolist[index].txt);
+                        return Radio_RecitersCard(txt: radiolist[index].txt);
                       },
 
                       separatorBuilder: (context, index) {
@@ -156,6 +167,22 @@ class _RadiooState extends State<Radioo> {
                       },
 
                       itemCount: radiolist.length,
+
+                    )
+                        : ListView.separated(
+                      padding: EdgeInsets.only(bottom: 10),
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+
+                      itemBuilder: (context, index) {
+                        return Radio_RecitersCard(txt: reciterslist[index].txt);
+                      },
+
+                      separatorBuilder: (context, index) {
+                        return SizedBox(height: 10,);
+                      },
+
+                      itemCount: reciterslist.length,
 
                     )
 
