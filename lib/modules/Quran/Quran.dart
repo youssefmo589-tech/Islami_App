@@ -587,7 +587,8 @@ class _QuranState extends State<Quran> {
                       alignment: Alignment.centerLeft,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Text("Most Recently ", style: TextStyle(
+                        child: RecentDataList.isEmpty ? SizedBox() : Text(
+                          "Most Recently ", style: TextStyle(
                             fontFamily: "Janna",
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
@@ -596,6 +597,7 @@ class _QuranState extends State<Quran> {
 
                   ),
                   SizedBox(height: 10),
+                  RecentDataList.isEmpty ? SizedBox() :
                   SizedBox(
                     height: 150,
                     child: ListView.separated(
@@ -623,7 +625,7 @@ class _QuranState extends State<Quran> {
                             color: AppColors.white),
                         ),
                       )),
-                  SizedBox(height: 10),
+                  SizedBox(height: 5),
 
 
                   ListView.separated(
