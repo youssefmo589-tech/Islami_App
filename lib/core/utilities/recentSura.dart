@@ -5,7 +5,6 @@ abstract class RecentSura {
 
   static const int _maxrecent = 5;
 
-  // Writeeeeeeeeeeeeeeeeeeeeee
   static Future<void> addSura(int SuraNumber) async {
     final prefs = await SharedPreferences.getInstance();
 
@@ -17,7 +16,6 @@ abstract class RecentSura {
     await prefs.setStringList(_key, trimmed);
   }
 
-  // gettttttttttttttttttttttttttttttttttttt
   static Future<List<int>> getRecentSyra() async {
     final prefs = await SharedPreferences.getInstance();
     final recent = prefs.getStringList(_key) ?? <String>[];

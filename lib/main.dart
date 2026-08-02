@@ -18,8 +18,6 @@ class MyApp extends StatelessWidget {
 
       initialRoute: AppRouteName.initial,
       routes: AppRouter.routes,
-
-      // home: OnBoarding(photo: Assets.images.frame3.image(), firstdescribe: OnBoardingTexts.firstpagefdescribe, seconddescribe: "" , isback: false , isseconddesc: false,pagenum: 1,),
     );
   }
 }
